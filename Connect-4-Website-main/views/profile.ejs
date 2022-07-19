@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/profilestyles.css">
+    
+    <title>Profile Page</title>
+</head>
+
+<!-- EJS PARTIAL HEADER -->
+<header>
+               
+    <%- include('./partials/header.ejs') %>
+       
+</header>
+
+<body>
+    <br>
+        <h1 class="user"><%= ainfo.username %> Stats</h1>
+
+        <img src="Images/pfp.PNG" alt="the profile picture you chose" class="userimg">
+        <br>
+        <h2>Connect 4 Stats</h2>
+
+        <h3>Connect 4 Red Wins: <%= ainfo.elo %></h3>
+        <h3>Connect 4 Blue Wins: </h3>
+    
+        <br>
+
+        <h2>Chess Stats</h2>
+
+        <h3>Chess Black Wins: </h3>
+        <h3>Chess White Wins</h3>
+
+        <h2>User Stats</h2>
+
+        <h3>User joined Agency Enterprises on: <%= ainfo.createdAt %></h3>
+        <h3>User has played (insert amount of games played) games on this website</h3>
+
+</body>
+
+
+
+<footer>
+    <!-- EJS PARTIAL FOOTER -->
+
+    <%- include('./partials/footer.ejs') -%>
+
+</footer>
+
+</html>

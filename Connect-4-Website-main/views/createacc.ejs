@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/createaccstyles.css">
+          
+    <title>Profile Page</title>
+    
+</head>
+    <!-- EJS PARTIAL HEADER -->
+    <header>
+               
+        <%- include('./partials/header.ejs') %>
+           
+    </header>
+    <body>
+
+        <main id="main-holder">
+
+            <h1 id="login-header">Create Account</h1>
+            <hr class="loginrule">
+            
+            <div id="login-form">
+            <form action="/createnewacc" method="POST">
+                <h3>Username</h3>
+                <input type="text" name="username" id="username-field" class="login-form-field" placeholder="ex: mike_oxlong123" required>
+                <h3>Password</h3>
+                <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Peepeepoopoo2" required>
+                <div id="conditions">
+                    <ul>
+                        <li id="char-cond"><p>Atleast 6 letters long<p></li>
+                        <li id="symb-cond"><p>Has a symbol<p></li>
+                        <li id="cap-cond"> <p>Has a capital</p></li>
+                        <li id="num-cond"><p>Has a Number</p></li>
+                    </ul>
+                </div>
+                <h3>Re-enter Password</h3>
+                <input type="password" name="repassword" id="password-field2" class="login-form-field" placeholder="Re-enter Password">
+                <div class="passerror">
+                    <p id="nomatch">Passwords do not match</p>
+                    <p id="passreq">Did not meet password requirements<p>
+                </div>
+                <button type="submit" value="Create Account" id="login-form-submit" name = 'real' class="real">Submit</button>
+            </form>
+            <button id="login-form-submit" name="fake" class="fakebutton" onclick="errfake()">Submit fake</button>
+
+            
+            </div>
+          </main>
+          <section>
+          </section>
+          <script src="../scripts/usercreate.js"></script>
+    
+    <!-- EJS PARTIAL FOOTER -->
+    <footer>
+        <%- include('./partials/footer.ejs') -%>
+    
+    </footer>
+    </body>
+    
+   
+    
+</html>

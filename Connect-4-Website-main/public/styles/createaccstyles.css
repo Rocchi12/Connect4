@@ -1,0 +1,133 @@
+body {
+    background-color: #cdb891;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    top: 35px;
+    position: relative;
+    width: fit-content;
+    color: black;
+    border-radius: 10px;
+}
+
+main hr {
+    position: relative;
+    top: 10px;
+    border: black solid 2px;
+    max-width: 60%;
+    padding: 0;
+}
+
+header {
+    /* background-color: rgb(93, 93, 243); */
+    background-color: #2f2f2f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 69;
+}
+header .title {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* login stuff */
+
+.loginrule {
+    margin-bottom: 5%;
+}
+
+#login-header {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 0%;
+    padding-top: 5%;
+    
+}
+
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: red;
+  }
+
+  #login-form{
+      margin-left: 27%;
+      max-width: 46%;
+      border: solid black 2px;
+      background: white;
+      color: black;
+      padding:20px;
+      text-align: left;
+  }
+  form h3{
+      color: black;
+      margin-bottom: 10px;
+      margin-top: 0;
+      margin-right: 0;
+      padding: 0;
+  }
+  form input{
+      display: inline;
+      margin-bottom: 10px;
+  }
+  #login-form-submit{
+    display: block;
+    background-color: #cdb891;
+    border: 2px solid black;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .login-form-field{
+      padding: 10px;
+      padding-right:10vw;
+      background-color: whitesmoke;
+  }
+  div #conditions li{
+      list-style-type: none;
+      padding: 5px 0;
+  }
+
+#conditions ul{
+    padding: 0;
+    padding-left: 5px;
+}
+div #conditions p, #nomatch, #passreq{
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    font-size: 15px;
+    color: red;
+}
+
+@media screen and (max-width:651px){
+  #login-form{
+      margin-left: 20%;
+      max-width: 60%;
+  }
+  #conditons ul li p{
+      display: inline;
+      font-size: 20px;
+      margin: 0;
+      font-size: 20px;
+  }
+  #conditions li{
+      list-style-type: dashed;
+      padding-bottom: 20px;
+      margin: 0;
+      padding: 0;
+
+  }
+  
+}

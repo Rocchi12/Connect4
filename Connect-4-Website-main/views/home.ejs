@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/homestyles.css">
+    
+          
+    <title>Home Page</title>
+
+</head>
+<!-- EJS PARTIAL HEADER -->
+    <header>
+               
+        <%- include('./partials/header.ejs') %>
+           
+    </header>
+    
+
+    
+    <main>
+        <br>
+        <h1>Games</h1>
+        <hr>
+        <ul>
+            <li class="home">
+                <a href="/connect4" class="connect4">
+                    <h2>Connect 4</h2>
+                    <br>
+                    <img src="images/Connect-4-Logo.PNG" alt="connect 4 picture">
+
+                    <p> A two-player connection board game, in which the players choose a color and then take turns dropping colored tokens into a seven-column,
+                        six-row vertically suspended grid.
+                   </p>
+
+                </a>
+                
+            </li>
+            <li class="home">
+                <a href="" class="chess">
+                    <h2>Chess</h2>
+                    <br>
+                    <img src="images/Chess-Logo.png" alt="chess">
+
+                    <p>
+                        Chess is an abstract strategy game where the object of the game is to checkmate the opponent's king,
+                        whereby the king is under immediate attack (in "check") and there is no way for it to escape.
+                    </p>
+
+                </a>
+                    
+            </li>
+            <li class="home" id="comesoon">
+                <a href="/connect4" class="connect4">
+                    <h2>Coming Soon!</h2>
+                    <br>
+                    <img src="images/comingsoon.png" alt="connect 4 picture">
+                </a>
+                    <p>
+                        More games to come!
+                    </p>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <!-- EJS PARTIAL FOOTER -->
+    
+        <%- include('./partials/footer.ejs') -%>
+    
+    </footer>
+
+    <script src='../scripts/userinfo.js'></script>
+    
+    
+
+</body>
+
+</html>

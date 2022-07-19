@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/loginstyles.css">
+          
+    <title>Profile Page</title>
+    
+</head>
+
+    <!-- EJS PARTIAL HEADER -->
+    <header>
+               
+      <%- include('./partials/header.ejs') %>
+         
+  </header>
+    <body>
+
+        <main id="main-holder">
+
+            <h1 id="login-header">Login</h1>
+            <hr class="loginrule">
+            
+            <% if (loginbool == false) { %>
+            <div id="login-error-msg-holder">
+              <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password. Please try again!</span></p>
+            </div>
+            <% } %>
+            
+            <form id="login-form" action="/loginaction" method="POST">
+              <h3>Username</h3>
+              <input type="text" name="username" id="username-field" class="login-form-field" placeholder="John Doe">
+              <h3>Password</h3>
+              <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Apple123"> 
+              <p id="no-account">No Account? <a href="/createacc">Create One!</a></p>
+              <input type="submit" value="Login" id="login-form-submit">
+            </form>
+          
+          </main>
+    
+    </body>
+
+    <footer>
+      <%- include('./partials/footer.ejs') -%>
+  
+  </footer>
+</html>

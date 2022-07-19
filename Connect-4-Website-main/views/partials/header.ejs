@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/headerstyles.css">
+</head>
+
+<!-- Header -->
+<header>
+               
+  <a href="/"><h1 class="title">Agency Enterprises</h1></a>
+         
+</header>
+<body>
+
+<!-- Side Panel -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="/">Home</a>
+  <a href="/about">About Us</a>
+  <hr>
+  <h3>GAMES</h3>
+  <a href="/connect4">Connect 4</a>
+  <a href="/chess">Chess</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+
+<!-- LOGGED IN -->
+<% if (ainfo != null) { %>
+<div id="myProfile" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">x</a>
+  <!-- <% console.log(ainfo.username) %> -->
+  <h3><%= ainfo.username %></h3>
+  <br>
+  <a href="/profile">Profile</a>
+  <a href="/logout">Logout</a>
+</div>
+<div id="profile">
+  <button class="openprofile" onclick="openMenu()"><img src="../Images/pfp.PNG" alt=""></button>  
+</div>
+<% } else{ %>
+  <!-- LOGGED OUT -->
+
+  <div class="signinbutton">
+    <button onclick="window.location.href='/login'" class="signin">👤 Sign In</button>
+  </div>
+<% } %>
+
+
+
+<script>
+  function openMenu() {
+    document.getElementById("myProfile").style.width = "250px";
+    document.getElementById("profile").style.marginRight = "250px";
+  }
+  
+  function closeMenu() {
+    document.getElementById("myProfile").style.width = "0";
+    document.getElementById("profile").style.marginLeft= "0";
+  }
+
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  }
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+</body>
+</html> 

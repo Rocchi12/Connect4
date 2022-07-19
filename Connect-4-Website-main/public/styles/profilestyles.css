@@ -1,0 +1,21 @@
+body {
+    background-color: #cdb891;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    min-height: 50px;
+    max-height: 50px;
+    display: none;
+    flex-direction: column;
+
+
+}
+
+.user {
+    padding: 25px;
+}
+
+img {
+    max-width: 50%;
+    margin: auto;
+}

@@ -1,0 +1,150 @@
+/*connect 4 styles*/
+body {
+    background-color: #cdb891;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+main h1 {
+    top: 35px;
+    position: relative;
+    width: fit-content;
+    color: black;
+    border-radius: 10px;
+}
+
+main hr {
+    position: relative;
+    top: 10px;
+    border: black solid 2px;
+    max-width: 60%;
+    padding: 0;
+}
+
+.conpos{
+    position: fixed;
+    display: block;
+    background-color: white;
+    width: 588px;
+    height: 504px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+
+}
+/*column pos*/
+.conpos .colpos1{
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    margin: 0;
+    padding: 0;
+}
+
+.conpos .colpos2{
+    position: absolute;
+    bottom: 0;
+    left: 84px;  
+}
+.conpos .colpos3{
+    position: absolute;
+    bottom: 0;
+    left: 168px;  
+}
+.conpos .colpos4{
+    position: absolute;
+    bottom: 0;
+    left: 252px;  
+}
+.conpos .colpos5{
+    position: absolute;
+    bottom: 0;
+    left: 336px;  
+}
+.conpos .colpos6{
+    position: absolute;
+    bottom: 0;
+    left: 420px;  
+}
+.conpos .colpos7{
+    position: absolute;
+    bottom: 0;
+    left: 504px;  
+}
+
+
+
+
+.conpos  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.conpos li div.blue{
+    background-color: blue;
+    height: 72px;
+    width: 84px;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+}
+.conpos li div.red{
+    background-color: red;
+    height: 72px;
+    width: 84px;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+}
+/*button placement*/
+
+.conpos button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 84px;
+    height: 504px;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+.conpos button:hover{
+    background-color: grey;
+    opacity: 0.1;
+}
+
+/* win page */
+
+.win{
+    position: fixed;
+    background-color: white;
+    width: 588px;
+    height: 504px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    display: none;
+}
+
+.win p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    color: black;
+    font-size: 40px;
+}
+.win button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    width: 150px;
+    height: 50px;
+}
+
+

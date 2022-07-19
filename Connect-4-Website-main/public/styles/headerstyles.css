@@ -1,0 +1,185 @@
+/* Header */
+header {
+    background-color: #2f2f2f;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 5px;
+    height: 50px;
+}
+header .title {
+    text-align: center;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+
+}
+
+/* Sign-In Button */
+.signin {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 5px 5px;
+    z-index: 2;
+    margin: 13.4px;
+    margin-right: 20px;
+    border-radius: 5%;
+    
+}
+
+/* Menu Sidebar */
+body {
+    font-family: "Lato", sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    z-index: 3;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    z-index: 2;
+       
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;   
+    z-index: 2;
+}
+h3{
+    margin: 0;
+    color: white;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* Profile Sidebar */
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openprofile{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.openprofile img{
+    position: fixed;
+    max-width: 45px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 100%;
+    top: 5px;
+    right: 4px;
+    z-index: 2;
+    
+}
+#profile {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+
+
